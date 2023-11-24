@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        isHopping = false;
     }
 
     private void Update()
@@ -19,7 +20,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && !isHopping)
         {
-            animator.SetTrigger("hop");
+            animator.SetTrigger("Hop");
             isHopping = true;
 
             Debug.Log(transform.position);
