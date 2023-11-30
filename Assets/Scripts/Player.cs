@@ -17,15 +17,6 @@ public class Player : MonoBehaviour
         hopButton = GameObject.Find("HopButton");
         leftButton = GameObject.Find("LeftHopButton");
         rightButton = GameObject.Find("RightHopButton");
-
-        if (hopButton == null)
-        {
-            print("didn't find button");
-        }
-        else
-        {
-            print("found button");
-        }
     }
 
     void Update()
