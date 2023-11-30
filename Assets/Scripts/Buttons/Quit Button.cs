@@ -7,7 +7,7 @@ public class QuitButton : MonoBehaviour
 {
     void Start()
     {
-        Quit();
+
     }
 
     void Update()

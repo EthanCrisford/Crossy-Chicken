@@ -7,18 +7,51 @@ public class Player : MonoBehaviour
     private Animator animator;
     private bool isHopping;
 
+    public GameObject hopButton;
+    ButtonScript menuButtonScript;
+    Rigidbody rb;
+
     void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
+
         isHopping = false;
+
+        hopButton = GameObject.Find("HopButton");
+
+        if( hopButton == null )
+        {
+            print("didn't find button");
+        }
+        else
+        {
+            print("found button");
+        }
+
+        
+
+
     }
 
     private void Update()
     {
-        Debug.Log(isHopping);
+        menuButtonScript = hopButton.GetComponent<ButtonScript>();
 
-        if (Input.GetKeyDown(KeyCode.Space) && !isHopping)
+        if ( menuButtonScript.hopButtonPressed)
         {
+            print("do hop - player script");
+            rb.velocity = new Vector3(0, 5, 2);
+            menuButtonScript.hopButtonPressed = false;
+        }
+
+        return;
+
+        print("touches=" + Input.touchCount);
+
+        if (Input.touchCount > 0 && !isHopping)
+        {
+            Touch touch = Input.GetTouch(0);
             animator.SetTrigger("Hop");
             isHopping = true;
             float zDifference = 0;
@@ -48,4 +81,5 @@ public class Player : MonoBehaviour
     {
         isHopping = false;
     }
+
 }

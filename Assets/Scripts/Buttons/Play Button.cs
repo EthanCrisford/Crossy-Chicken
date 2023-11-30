@@ -7,7 +7,7 @@ public class PlayButton : MonoBehaviour
 {
     void Start()
     {
-        Play();
+
     }
 
     void Update()

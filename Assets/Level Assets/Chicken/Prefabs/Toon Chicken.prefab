@@ -349,7 +349,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 84dd067921f4e0045bb3a9a6e8fb7789, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -5217,6 +5217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa18961bdc2e58a4da0ca0e269270769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hopButton: {fileID: 0}
 --- !u!1 &1325880688823160
 GameObject:
   m_ObjectHideFlags: 0

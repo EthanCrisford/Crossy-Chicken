@@ -7,7 +7,7 @@ public class MenuButton : MonoBehaviour
 {
     void Start()
     {
-        Menu();
+
     }
 
     void Update()
