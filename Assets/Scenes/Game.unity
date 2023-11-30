@@ -3827,7 +3827,7 @@ MonoBehaviour:
   rightButton: {fileID: 431034308}
   menuButtonScript: {fileID: 1386637524}
   rayMarker: {fileID: 1068651227}
-  rayDistance: 5
+  rayDistance: 0.2
 --- !u!4 &1708162892
 Transform:
   m_ObjectHideFlags: 0

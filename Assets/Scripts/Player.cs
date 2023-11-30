@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -12,6 +15,7 @@ public class Player : MonoBehaviour
     Rigidbody rb;
     public Transform rayMarker;
     public float rayDistance = 0.5f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -53,12 +57,23 @@ public class Player : MonoBehaviour
         if (hitinfo.collider.gameObject.tag == "Ground")
         {
             isGrounded = true;
-            Debug.Log("Collided with " + hitinfo.collider.name);
         }
         else
         {
             isGrounded = false;
-            Debug.Log("NOT GROUNDED!");
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Car")
+        {
+            playerDeath();
+        }
+    }
+
+    void playerDeath()
+    {
+        SceneManager.LoadScene("Death");
     }
 }
