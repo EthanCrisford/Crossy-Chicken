@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 303105912}
   m_Layer: 0
   m_Name: Cars
-  m_TagString: Ground
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1433,7 +1433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574538099}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.36682644, y: -0.20109572, z: 0.081544384, w: 0.90462667}
+  m_LocalRotation: {x: 0.36682642, y: -0.20109567, z: 0.08154437, w: 0.90462667}
   m_LocalPosition: {x: 12.15, y: 3.457, z: -4.1499996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2064,7 +2064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.36682644, y: -0.20109572, z: 0.081544384, w: 0.90462667}
+  m_LocalRotation: {x: 0.36682642, y: -0.20109567, z: 0.08154437, w: 0.90462667}
   m_LocalPosition: {x: 12.15, y: 3.457, z: -4.1499996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2450,6 +2450,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1252161886584478, guid: 1bbc73fc330e07c4bafc7099fe33b4bd, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764678305666358, guid: 1bbc73fc330e07c4bafc7099fe33b4bd, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
     - target: {fileID: 4124405236197744, guid: 1bbc73fc330e07c4bafc7099fe33b4bd, type: 3}
       propertyPath: m_LocalRotation.w
       value: 4.3297806e-17
@@ -2645,6 +2653,10 @@ PrefabInstance:
     - target: {fileID: 1394382416345726, guid: 8da2fa4410a3c384badf2e8d8d2f56f3, type: 3}
       propertyPath: m_Name
       value: Car 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1394382416345726, guid: 8da2fa4410a3c384badf2e8d8d2f56f3, type: 3}
+      propertyPath: m_TagString
+      value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 4529314752072744, guid: 8da2fa4410a3c384badf2e8d8d2f56f3, type: 3}
       propertyPath: m_LocalScale.x
