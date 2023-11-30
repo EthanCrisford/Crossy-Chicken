@@ -8,7 +8,9 @@ public class Player : MonoBehaviour
     private bool isHopping;
 
     public GameObject hopButton;
-    ButtonScript menuButtonScript;
+    public GameObject leftButton;
+    public GameObject rightButton;
+    [SerializeField] ButtonScript menuButtonScript;
     Rigidbody rb;
 
     void Start()
@@ -19,6 +21,8 @@ public class Player : MonoBehaviour
         isHopping = false;
 
         hopButton = GameObject.Find("HopButton");
+        leftButton = GameObject.Find("LeftHopButton");
+        rightButton = GameObject.Find("RightHopButton");
 
         if( hopButton == null )
         {
@@ -28,21 +32,29 @@ public class Player : MonoBehaviour
         {
             print("found button");
         }
-
-        
-
-
     }
 
-    private void Update()
+    void Update()
     {
-        menuButtonScript = hopButton.GetComponent<ButtonScript>();
-
-        if ( menuButtonScript.hopButtonPressed)
+        if (menuButtonScript.hopButtonPressed)
         {
-            print("do hop - player script");
             rb.velocity = new Vector3(0, 5, 2);
             menuButtonScript.hopButtonPressed = false;
+            print("do hop - player script");
+        }
+        
+        if (menuButtonScript.leftButtonPressed)
+        {
+            rb.velocity = new Vector3(-2, 0, 0);
+            menuButtonScript.leftButtonPressed = false;
+            print("do left - player script");
+        }
+        
+        if (menuButtonScript.rightButtonPressed)
+        {
+            rb.velocity = new Vector3(2, 0, 0);
+            menuButtonScript.rightButtonPressed = false;
+            print("do right - player script");
         }
 
         return;
@@ -80,6 +92,5 @@ public class Player : MonoBehaviour
     public void FinishHop()
     {
         isHopping = false;
-    }
-
+    } 
 }
