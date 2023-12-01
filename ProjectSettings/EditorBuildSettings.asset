@@ -18,6 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Victory.unity
     guid: 7d52d0fc431651d499bf80dea21788ea
   m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
+      guid: cdc2587da0cf7d347a841e5b9bb4b6d0, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 8030cdfb129018e4da2602b2ae60aac8,
       type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
