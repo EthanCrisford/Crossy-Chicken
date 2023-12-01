@@ -50,9 +50,16 @@ public class Player : MonoBehaviour
     {
         Physics.Raycast(rayMarker.position, -Vector3.up, out RaycastHit hitinfo, rayDistance);
 
-        if (hitinfo.collider.gameObject.tag == "Ground")
+        if (hitinfo.collider)
         {
-            isGrounded = true;
+            if (hitinfo.collider.gameObject.tag == "Ground")
+            {
+                isGrounded = true;
+            }
+            else
+            {
+                isGrounded = false;
+            }
         }
         else
         {
@@ -63,6 +70,11 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Car")
+        {
+            playerDeath();
+        }
+
+        if (collision.gameObject.tag == "River")
         {
             playerDeath();
         }
