@@ -78,10 +78,20 @@ public class Player : MonoBehaviour
         {
             playerDeath();
         }
+
+        if (collision.gameObject.tag == "Finish")
+        {
+            playerWin();
+        }
     }
 
     void playerDeath()
     {
         SceneManager.LoadScene("Death");
+    }
+
+    void playerWin()
+    {
+        SceneManager.LoadScene("Victory");
     }
 }
