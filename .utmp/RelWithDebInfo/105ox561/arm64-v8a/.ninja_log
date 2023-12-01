@@ -1,3 +1,5 @@
 # ninja log v5
-1	198	7231436211822108	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d20ae34efb0d608d
 199	324	7231436212735240	C:/temp/Ethan/Crossy Chicken/Crossy-Chicken/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/105ox561/obj/arm64-v8a/libswappywrapper.so	c73308bdb2f51183
+1	198	7231436211822108	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d20ae34efb0d608d
+1	252	7231441511972728	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	d20ae34efb0d608d
+252	493	7231441514002506	C:/temp/Ethan/Crossy Chicken/Crossy-Chicken/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/105ox561/obj/arm64-v8a/libswappywrapper.so	c73308bdb2f51183
